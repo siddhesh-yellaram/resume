@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siddhesh Yellaram</title>
+  <link rel="stylesheet" href="./styles/main.css" type="text/css" media="screen">
+</head>
+
+<body>
+
+  <div id="container--main">
+    <section id="wrapper--hero" class="section--page">
+      <img src="./assets/images/profile.jpg" id="profile-pic" />
+
+      <div>
+        <h1 id="user-name">Siddhesh Yellaram</h1>
+        <p id="bio">I am passionate about learning new technologies and enjoy solving complex problems to design and
+          improve scalable systems. I have a strong foundation in my current skills and always looking for opportunities
+          to innovate and create meaningful solutions.</p>
+        <p id="email">👉 speedykler15@gmail.com</p>
+      </div>
+    </section>
+
+    <section class="section--page">
+      <div id="socials--list">
+        <a href="https://www.linkedin.com/in/siddhesh-yellaram" target="_blank">LinkedIn</a>
+        <a href="https://github.com/siddhesh-yellaram" target="_blank">Github</a>
+        <!-- <a href="https://medium.com/" target="_blank">Blogs</a> -->
+        <a href="https://x.com/siddyel00" target="_blank">X</a>
+        <!-- <a href="./assets/#" target="_blank">Download Resume</a> -->
+      </div>
+    </section>
+
+    <section class="section--page">
+      <h2>Skills & Qualifications</h2>
+      <ul id="qualifications--list">
+        <li>✔️ 3+ Years experience in backend and web development</li>
+        <li>✔️ Strong .Net Core / Framework and Angular expertise</li>
+        <li>✔️ System design and architecture experience</li>
+        <li>✔️ Proficiency in Sql Server and MySql</li>
+      </ul>
+    </section>
+
+    <section class="section--page">
+      <h2>Tech stack</h2>
+
+      <div id="wrapper--techstack__items">
+        <div class="card--techstack"><span>.NET Core, .NET Framework</span></div>
+        <div class="card--techstack"><span>Angular, Flutter</span></div>
+        <div class="card--techstack"><span>MySQL, SQL Server, MongoDB</span></div>
+      </div>
+    </section>
+
+    <section class="section--page" id="work-history-wrapper">
+      <h2>Work History</h2>
+
+      <div class="line-break"></div>
+      <div class="card--work-history">
+        <strong>🚧 SOFTWARE ENGINEER | SWABHAV VENTURELABS</strong>
+        <p>08/2021 - Present</p>
+        <p>
+          Implemented migrating GS Website (Known as IIMTF For Conducting Exhibitions All Over India) from Angular 8
+          to Angular 13 with improving
+          efficiency in analysis of Product, Exhibitor & Visitor with lots of UI and API changes & so worked
+          on Agraeta (Known as BTL that has been producing innovative, world-class Kitchen Drawer Baskets and
+          Accessories) with latest .NET Core 6 and angular 16
+        </p>
+        <p>
+          Developed ticketing app firstly using Kotlin/Java and now in Flutter for fetching visitor data along with
+          different processes such as unique MCC (Mega Consumer Card) which will get associated with all
+          visitors who visited exhibition and did shopping and provide different gifts along with Scan QR for verifying
+          tickets of visitor before entering exhibitions and different web applications such as GsWeb Online Ticketing,
+          MCCQr here when visitor scans qr and enters shopping details after completing shopping at mcc counter.
+        </p>
+        <p>
+          Served as a module leader in designing the Agraeta website (known as BTL, a company simplifying spaces with
+          innovative, world-class kitchen drawer baskets and accessories in India). The website includes modules for
+          managing companies, transports, cities, addresses, and user roles, which are used for adding orders and
+          applying discounts based on user roles (dealer, distributor, or end-user) through login credentials.
+        </p>
+        <p>
+          Additionally, collaborated with teammates to design an attendance and expense module. This module monitors
+          salesperson activity in real-time by fetching their live location and city through a Flutter-based salesperson
+          app. The app provides valuable insights into their orders, visits, attendance, and expense entries. Using the
+          expense module, administrators can track day-wise salesperson expenses, including allocated budgets and any
+          extra expenses incurred based on locations across different regions in India.
+        </p>
+        <p>Tech Stack: .NET Framework / Core, Angular, Flutter, Sql Server, MySql</p>
+      </div>
+
+      <div class="line-break"></div>
+      <div class="card--work-history">
+        <strong>🚧 GS Team Head | SWABHAV VENTURELABS</strong>
+        <p>01/24 - Present</p>
+        <p>Integrated WhatsApp with the ticketing app to ensure authentic visitor verification and led the team in
+          upgrading the app from Java to Flutter. The transition to Flutter was made to leverage its modern,
+          cross-platform capabilities, enabling faster development, a better user experience, and easier maintenance.
+          Additionally, I incorporated Bluetooth connectivity into the app, resolving errors that were prevalent in the
+          old Java-based version.
+        </p>
+        <p>Designed and hosted a live MCC Visitor QR website application to streamline the process of adding visitor
+          purchase entries. Previously, entries were recorded in Google Sheets and then manually transferred to the
+          website, causing delays and duplication of effort. With this new application, interns can now directly add
+          entries, eliminating the need for re-entering data and significantly saving time
+        </p>
+      </div>
+    </section>
+
+    </section>
+
+    <section class="section--page">
+      <h2>Get In Touch</h2>
+
+      <div class="line-break"></div>
+      <div class="card--contact">
+        <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+          <div class="form-group">
+            <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" name="email" id="useremail" placeholder="Enter your email"
+              required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="number" name="contact" id="contact" placeholder="Contact number">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" id="message" rows="4"
+              placeholder="How can I help you?"></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+
+    function sendEmail() {
+      var messageBody = `Email: ` + document.getElementById("useremail").value +
+        ` <br />Contact number: ` + document.getElementById("contact").value +
+        ` <br /> Message: ` + document.getElementById("message").value
+
+      Email.send({
+        SecureToken: "23433945-23a7-441a-97c5-73caaf4e7873",
+        To: 'speedykler15@gmail.com',
+        From: "swabhavtest@gmail.com",
+        Subject: "Contacted by " + document.getElementById("name").value,
+        Body: messageBody,
+      }).then(
+        message => alert("Message sent successfully")
+      );
+    }
+  </script>
+</body>
+
+</html>
